@@ -13,7 +13,11 @@
             const trainingData = tf.data.csv(trainingUrl, {
                 
                 // YOUR CODE HERE
-                
+                columnConfigs: {
+                    diagnosis: {
+                        isLabel: true
+                    }
+                }
             });
             
             // Convert the training data into arrays in the space below.
@@ -32,7 +36,11 @@
             const testingData = tf.data.csv(testingUrl, {
                 
                 // YOUR CODE HERE
-                
+                columnConfigs: {
+                    diagnosis: {
+                        isLabel: true
+                    }
+                }
             });
             
             // Convert the testing data into arrays in the space below.
